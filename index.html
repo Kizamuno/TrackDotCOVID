@@ -11,6 +11,102 @@
     <link rel="icon" href="https://img.icons8.com/color/48/null/coronavirus--v1.png" type="image/icon type">
     
     <title>TrackDotCOVID</title>
+
+    <style>
+      .hero {
+      background-color: #0D6EFD;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .hero button {
+      background-color: white;
+      color: #0D6EFD;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .hero button:hover {
+      background-color: #0D6EFD;
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px #0D6EFD;
+    }
+
+    .comparison {
+      background-color: #f2f2f2;
+      padding: 50px;
+    }
+    .comparison h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .comparison p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .comparison .chart {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .comparison .note {
+      font-size: 14px;
+      color: #9a9a9a;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #0D6EFD;
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+    }
+    footer h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    footer p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+    footer a:hover {
+      color: #0D6EFD;
+    }
+    footer .social-icons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    footer .social-icons i {
+      font-size: 36px;
+      margin: 0 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    footer .social-icons i:hover {
+      color: #0D6EFD;
+    }
+    </style>
 </head>
 
 
@@ -43,19 +139,58 @@
     </div>
   </nav>
 
+  <section class="hero">
+    <h1>TrackDotCOVID</h1>
+    <p>Stay informed and updated on the latest COVID-19 statistics and news.</p>
+    <a href="news.html">
+      <button>Learn More About COVID-19</button>
+    </a>
+  </section>
 
-<div class="Chart Title">
-    <h1>Covid Cases</h1>
-</div>
-  <div class="first">
-    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=desc&pickerMetric=new_cases_per_million&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=GBR~DEU~FRA~ITA~ESP&hideControls=true" loading="lazy" style="width: 85%; height: 600px; border: 3px none;"></iframe>
-  </div>
+  <section class="comparison">
+    <h2>Explore the global data on confirmed COVID-19 cases</h2>
+    <p>What is the daily number of confirmed cases?</p>
+    <div class="chart">
+      <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=desc&pickerMetric=new_cases_per_million&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=GBR~DEU~FRA~ITA~ESP&hideControls=true" loading="lazy" style="width: 85%; height: 600px; border: 3px none;"></iframe>
+    </div>
+    <p class="note">What is important to note about these case figures?
+      <br>The reported case figures on a given date do not necessarily show the number of new cases on that day – this is due to delays in reporting.
+      <br>The actual number of cases is likely to be much higher than the number of confirmed cases – this is due to limited testing. In a separate post we discuss how models of COVID-19 help us estimate the actual number of cases.</p>
+  </section>
 
-  <div class="second">
-    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&facet=none&uniformYAxis=0&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=Vaccine+doses&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=false&country=~OWID_WRL" loading="lazy" style="width: 85%; height: 600px; border: 3px none;"></iframe>
-  </div>
+  <section class="comparison">
+    <h2>Coronavirus (COVID-19) Vaccinations</h2>
+    <p>69.1% of the world population has received at least one dose of a COVID-19 vaccine.
+    <br>13.21 billion doses have been administered globally, and 2.51 million are now administered each day.
+    <br>25.9% of people in low-income countries have received at least one dose.</p>
+    <div class="chart">
+      <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&facet=none&uniformYAxis=0&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=Vaccine+doses&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=false&country=~OWID_WRL" loading="lazy" style="width: 85%; height: 600px; border: 3px none;"></iframe>
+    </div>
+    <p class="note">To bring this pandemic to an end, a large share of the world needs to be immune to the virus. The safest way to achieve this is with a vaccine. Vaccines are a technology that humanity has often relied on in the past to bring down the death toll of infectious diseases.
+    <br>Within less than 12 months after the beginning of the pandemic, several research teams rose to the challenge and developed vaccines that protect from SARS-CoV-2.
+    <br>Now the challenge is to make these vaccines available to people around the world. It will be key that people in all countries — not just in rich countries — receive the required protection. To track this effort we at Our World in Data are building the international vaccination dataset that we make available on this page.</p>
+  </section>
 
-  
+  <section class="comparison">
+    <h2>Philippines: Daily Confirmed Cases</h2>
+    <p>How do they compare to other countries?</p>
+    <div class="chart">
+      <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&time=latest&facet=none&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=~PHL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    </div>
+    <p class="note">Differences in the population size between different countries are often large. To compare countries, it is insightful to look at the number of confirmed cases per million people – this is what the chart shows.
+    <br>Keep in mind that in countries that do very little testing the actual number of cases can be much higher than the number of confirmed cases shown here.</p>
+  </section>
+ 
+  <footer>
+    <h2>TrackDotCOVID</h2>
+    <p>Stay informed and updated on the latest COVID-19 statistics and news.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Copyright © 2023 TrackDotCOVID by Abril, Nathaniel L. (BSIT 11) </p>
+  </footer>
  
 <body>
     
