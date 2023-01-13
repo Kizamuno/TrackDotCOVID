@@ -8,3 +8,22 @@ text-align: center;
 
 }
 
+.school_logo{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.position {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    
+  }
+
+#udmlogo{
+    
+    object-fit: none;
+    object-position: 50px 30px;
+    
+
+  }
