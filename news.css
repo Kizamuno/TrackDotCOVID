@@ -1,0 +1,13 @@
+.card_mb-3{
+    margin: 4em;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: aqua;
+}
+
+.card-header{
+
+    text-align: center;
+}
+
+.card-body
