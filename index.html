@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" ref="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="icon" href="https://img.icons8.com/color/48/null/coronavirus--v1.png" type="image/icon type">
+    
     <title>TrackDotCOVID</title>
 </head>
 
@@ -42,13 +44,13 @@
   </nav>
 
 
-  <section>
-    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=desc&pickerMetric=new_cases_per_million&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=GBR~DEU~FRA~ITA~ESP&hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-  </section>
+  <div class="first">
+    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=desc&pickerMetric=new_cases_per_million&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=GBR~DEU~FRA~ITA~ESP&hideControls=true" loading="lazy" style="width: 85%; height: 600px; border: 3px none;"></iframe>
+  </div>
 
-  <section>
-    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&facet=none&uniformYAxis=0&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=Vaccine+doses&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=false&country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-  </section>
+  <div class="second">
+    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&facet=none&uniformYAxis=0&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=Vaccine+doses&Interval=7-day+rolling+average&Relative+to+Population=false&Color+by+test+positivity=false&country=~OWID_WRL" loading="lazy" style="width: 85%; height: 600px; border: 3px none;"></iframe>
+  </div>
 
   
  
