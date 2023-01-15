@@ -27,3 +27,96 @@ text-align: center;
     
 
   }
+  .hero {
+    background-color: #0D6EFD;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .hero button {
+    background-color: white;
+    color: #0D6EFD;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .hero button:hover {
+    background-color: #0D6EFD;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #0D6EFD;
+  }
+
+  .comparison {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  .comparison h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .comparison p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .comparison .chart {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .comparison .note {
+    font-size: 14px;
+    color: #9a9a9a;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #0D6EFD;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  footer h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  footer p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  footer a:hover {
+    color: #0D6EFD;
+  }
+  footer .social-icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .social-icons i {
+    font-size: 36px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .social-icons i:hover {
+    color: #0D6EFD;
+  }
